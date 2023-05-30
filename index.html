@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+   
+    body{
+
+        background-image: linear-gradient(150deg,rgb(19, 19, 252),rgb(74, 141, 249));
+    }
+
+   
+
+   .div2{
+
+    border: 1px red solid;
+    /* width: 500px; */
+    height: 200px;
+    border-style:  none;
+    text-align: center;
+    
+
+
+   }
+   #show{
+    list-style: none;
+    text-align: center;
+   }
+   #btn{
+    padding: 05px;
+    border-radius: 10px;
+    width: 190px;
+    background-color: rgb(110, 164, 251);
+   }
+   #inpta{
+    padding: 05px;
+    border-radius: 10px;
+    width: 175px;
+   
+   }
+   #inptb{
+    padding: 05px;
+    border-radius: 10px;
+    width: 175px;
+    
+   }
+   #inptc{
+    padding: 05px;
+    border-radius: 10px;
+    width: 175px;
+   }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="div2">
+
+        <input type="txt" id="inpta" placeholder="Enter Name"> <br>
+        <input type="txt1" id="inptb" placeholder="Enter About"> <br>
+        <input type="txt2" id="inptc" placeholder="Enter image Address"> <br>
+        <button id="btn" onclick="see()"> Click Me </button>
+
+        </div>
+
+
+        <ul id="show">
+
+         
+
+
+        </ul>
+
+
+    </div>
+    
+
+
+
+
+
+    <script>
+ 
+         function see(){
+         var a = document.getElementById("inpta").value
+         var b = document.getElementById("inptb").value
+         var c = document.getElementById("inptc").value
+         document.getElementById("show").innerHTML=` 
+         <li> <h1> ${a} </h1>
+         <h3> ${b} </h3>
+         <img src="${c}"> </li> `
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>
